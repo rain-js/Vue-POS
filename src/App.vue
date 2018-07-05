@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <i class="icon iconfont icon-member"></i>
+    <i class="icon iconfont icon-bill"></i>
     <router-view/>
   </div>
 </template>
