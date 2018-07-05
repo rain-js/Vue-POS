@@ -14,5 +14,8 @@
 </script>
 
 <style scoped>
-
+.pos {
+    overflow: hidden;
+    border: 2px solid salmon;
+}
 </style>
