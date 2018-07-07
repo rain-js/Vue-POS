@@ -44,12 +44,7 @@
     background-color: #1D8ce0;
     \border: 1px solid blue;
 }
-.left-nav ul {
-    margin: 0;
-    padding: 0;
-}
 .left-nav ul li {
-    list-style: none;
     padding: 8px;
     border-bottom: 1px solid #20a0ff;
 }

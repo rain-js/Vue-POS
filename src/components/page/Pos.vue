@@ -31,7 +31,15 @@
                 </el-tabs>
             </el-col>
             <el-col :span="18" class="goods-list fix-height">
-                <div>产品栏</div>
+                <div class="often-goods">
+                    <div class="often-goods-title">常用商品</div>
+                    <ol class="clearfix" >
+                        <li v-for="goods in oftenGoods">
+                            <span class="often-goods-name">{{goods.goodsName}}</span>
+                            <span class="often-goods-price">￥{{goods.price}}</span>
+                        </li>
+                    </ol>
+                </div>
             </el-col>
         </el-row>
     </div>
@@ -60,7 +68,50 @@
                     goodsName: '甜筒',
                     price: 8,
                     count:1
-                }]
+                }],
+                oftenGoods:[
+                    {
+                        goodsId:1,
+                        goodsName:'香辣鸡腿堡',
+                        price:18
+                    }, {
+                        goodsId:2,
+                        goodsName:'田园鸡腿堡',
+                        price:15
+                    }, {
+                        goodsId:3,
+                        goodsName:'和风汉堡',
+                        price:15
+                    }, {
+                        goodsId:4,
+                        goodsName:'快乐全家桶',
+                        price:80
+                    }, {
+                        goodsId:5,
+                        goodsName:'脆皮炸鸡腿',
+                        price:10
+                    }, {
+                        goodsId:6,
+                        goodsName:'魔法鸡块',
+                        price:20
+                    }, {
+                        goodsId:7,
+                        goodsName:'可乐大杯',
+                        price:10
+                    }, {
+                        goodsId:8,
+                        goodsName:'雪顶咖啡',
+                        price:18
+                    }, {
+                        goodsId:9,
+                        goodsName:'大块鸡米花',
+                        price:15
+                    }, {
+                        goodsId:20,
+                        goodsName:'香脆鸡柳',
+                        price:17
+                    }
+                ]
             }
         },
         mounted() {
@@ -85,5 +136,21 @@
     }
     .button-group {
         margin-top: 20px;
+    }
+    .often-goods-title {
+        height: 20px;
+        border-bottom:1px solid #D3DCE6;
+        background-color: #F9FAFC;
+        padding:10px;
+    }
+    .often-goods li {
+        float:left;
+        border:1px solid #E5E9F2;
+        padding:10px;
+        margin:5px;
+        background-color:#fff;
+    }
+    .often-goods-price {
+        color:#58B7FF;
     }
 </style>
