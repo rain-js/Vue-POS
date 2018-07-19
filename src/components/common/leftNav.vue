@@ -38,11 +38,10 @@
 <style>
 .left-nav {
     height: 100%;
-    width: 5%;
+    width: 42px;
     float: left;
     color: #fff;
     background-color: #1D8ce0;
-    \border: 1px solid blue;
 }
 .left-nav ul li {
     padding: 8px;
